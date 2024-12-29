@@ -18,4 +18,13 @@ default_account_name = "metamask_dev"
 explorer_uri = "https://eth-sepolia.blockscout.com/"
 explorer_type = "blockscout"
 
+[networks.sepolia-zksync]
+url = "$ZKSYNC_SEPOLIA_URL"
+chain_id = 300
+save_to_db = false
+default_account_name = "metamask_dev"
+explorer_uri = "https://explorer.sepolia.era.zksync.dev"
+explorer_type = "zksyncexplorer"
+is_zksync = true
+
 # You can view all configuration options at https://cyfrin.github.io/moccasin/all_moccasin_toml_parameters.html
