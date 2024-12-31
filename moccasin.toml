@@ -27,4 +27,11 @@ explorer_uri = "https://explorer.sepolia.era.zksync.dev"
 explorer_type = "zksyncexplorer"
 is_zksync = true
 
+[networks.tenderly-fake-chain]
+url = "$TENDERLY_FAKE_CHAIN_URL"
+chain_id = 735711155111
+save_to_db = false
+default_account_name = "metamask_dev"
+
+
 # You can view all configuration options at https://cyfrin.github.io/moccasin/all_moccasin_toml_parameters.html
