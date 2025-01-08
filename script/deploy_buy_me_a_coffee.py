@@ -17,11 +17,11 @@ def deploy_buy_me_a_coffee() -> VyperContract:
     print(f"{SNX_WEI_AMOUNT} SNX to USD rate: {snx_to_usd_rate}")
 
     # Fund the contract
-    old_balance: uint256 = contract.get_balance()
+    old_balance: int = contract.get_balance()
     print(f"Current contract balance: {old_balance}")
     contract.fund(value=SNX_WEI_AMOUNT)
     contract.fund(value=SNX_WEI_AMOUNT)
-    new_balance: uint256 = contract.get_balance()
+    new_balance: int = contract.get_balance()
     print(f"New contract balance: {new_balance}")
 
     # Change ownership
